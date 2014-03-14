@@ -48,7 +48,7 @@
             <HyperlinkButton x:Name="Url_Button" Grid.RowSpan="1" Grid.Row="0" HorizontalAlignment="Center" Margin="142,-26,0,0"  Content="www.OpenExchangeRate.org" Click="Url_Button_Tap" Width="304" Background="Transparent" BorderThickness="0" FontSize="20" VerticalAlignment="Center" Foreground="#FF1342C1" >
             </HyperlinkButton>
 
-            <Button x:Name="Email_Button" Content="Emial Us!" Grid.Row="3" Margin="0,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="458" Height="120" Tap="Email_Button_Click" />
+            <Button x:Name="Email_Button" Content="Email Us!" Grid.Row="3" Margin="0,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="458" Height="120" Tap="Email_Button_Click" />
         </StackPanel>
     </Grid>
 </phone:PhoneApplicationPage>
