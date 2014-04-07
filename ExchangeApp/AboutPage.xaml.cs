@@ -18,19 +18,21 @@ namespace ExchangeApp
             InitializeComponent();
         }
 
-        private void Email_Button_Click(object sender, RoutedEventArgs e)
-        {
-            EmailComposeTask emailComposeTask = new EmailComposeTask();
-            emailComposeTask.Subject = "Request for support";
-            emailComposeTask.To = "four0126@algonquinlive.com";
-            emailComposeTask.Show();
-        }
+       
 
         private void Url_Button_Tap(object sender, RoutedEventArgs e)
         {
             WebBrowserTask wbt = new Microsoft.Phone.Tasks.WebBrowserTask();
             wbt.Uri = new Uri("http://www.openexchangerates.org");
             wbt.Show();
+        }
+
+        private void mail(object sender, EventArgs e)
+        {
+            EmailComposeTask emailComposeTask = new EmailComposeTask();
+            emailComposeTask.Subject = "My Question";
+            emailComposeTask.To = "hello@alexpfournier.com";
+            emailComposeTask.Show();
         }
     }
 }

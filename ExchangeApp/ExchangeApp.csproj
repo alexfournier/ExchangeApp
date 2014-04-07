@@ -158,6 +158,7 @@
     <Content Include="image\dollar_currency_sign.png" />
     <Content Include="image\foreign_currency.jpg" />
     <Content Include="image\gray-line-bg.png" />
+    <Content Include="image\mail.png" />
     <Content Include="image\moneyBackground.png" />
   </ItemGroup>
   <ItemGroup>

@@ -19,7 +19,7 @@
         <!--  Set Background  -->
         <Grid.Background>
             <ImageBrush ImageSource="/image/currency.jpg"
-                        Opacity="0.4"
+                        Opacity="0.3"
                         Stretch="None">
                 <ImageBrush.RelativeTransform>
                     <CompositeTransform />
@@ -56,31 +56,20 @@
             <StackPanel x:Name="TitlePanel"
                         Grid.RowSpan="3"
                         Grid.ColumnSpan="8">
-                <TextBlock Width="470"
-                           Height="110"
-                           Margin="0,18,0,0"
-                           HorizontalAlignment="Center"
+                <TextBlock HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            CharacterSpacing="150"
                            FontFamily="Segoe WP Light"
                            FontSize="{StaticResource PivotHeaderFontSize}"
                            FontStretch="Expanded"
-                           FontWeight="Medium"
                            Foreground="#FF56A853"
-                           LineHeight="6"
-                           Padding="0"
                            Style="{StaticResource PhoneTextTitle1Style}"
                            Text="Currency" />
 
-                <TextBlock Width="210"
-                           Height="70"
-                           Margin="230,-30,0,0"
-                           HorizontalAlignment="Center"
+                <TextBlock HorizontalAlignment="Center"
                            VerticalAlignment="Center"
-                           CharacterSpacing="-41"
                            FontSize="50"
                            Foreground="#FFE5DEDB"
-                           Padding="0"
                            Style="{StaticResource PhoneTextNormalStyle}"
                            Text="Converter" />
             </StackPanel>
@@ -140,6 +129,7 @@
                                Margin="0"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
+                               Foreground="#FF569CD6"
                                Padding="0,10,0,0"
                                Text="CAD"
                                TextAlignment="Center" />
@@ -168,6 +158,7 @@
                     <TextBlock Margin="0"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
+                               Foreground="#FF569CD6"
                                Padding="0,10,0,0"
                                Text="Euro"
                                TextAlignment="Center" />
@@ -195,6 +186,7 @@
                     <TextBlock Margin="0"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
+                               Foreground="#FF569CD6"
                                Padding="0,10,0,0"
                                Text="GBP"
                                TextAlignment="Center" />
@@ -223,6 +215,7 @@
                     <TextBlock Margin="0"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
+                               Foreground="#FF569CD6"
                                Padding="0,10,0,0"
                                Text="JPY"
                                TextAlignment="Center" />
@@ -239,13 +232,11 @@
                                             IconUri="/Assets/AppBar/check.png"
                                             Text="done" />
 
-            <shell:ApplicationBarIconButton Click="AppBarIconBtn"
-                                            IconUri="/Assets/AppBar/questionmark.png"
-                                            Text="Help" />
+
 
             <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Click="closeKB" Text="Close Keyboard" />
-                <shell:ApplicationBarMenuItem Click="fetchData" Text="Fetch" />
+
+                <shell:ApplicationBarMenuItem Click="fetchData" Text="Fetch Data" />
                 <shell:ApplicationBarMenuItem Click="AppBarIconBtn" Text="About" />
             </shell:ApplicationBar.MenuItems>
 
